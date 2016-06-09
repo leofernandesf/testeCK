@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7B526C51D05B611000476B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B526C41D05B611000476B0 /* AppDelegate.swift */; };
+		A7B526CC1D05B611000476B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B526CA1D05B611000476B0 /* Main.storyboard */; };
+		A7B526CE1D05B611000476B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B526CD1D05B611000476B0 /* Assets.xcassets */; };
+		A7B526D11D05B611000476B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B526CF1D05B611000476B0 /* LaunchScreen.storyboard */; };
+		A7B526D91D05B757000476B0 /* ProfessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B526D81D05B757000476B0 /* ProfessorViewController.swift */; };
+		A7B526DB1D05B765000476B0 /* AlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B526DA1D05B765000476B0 /* AlunoViewController.swift */; };
+		A7B526DD1D05BCF2000476B0 /* DetalheProfessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B526DC1D05BCF2000476B0 /* DetalheProfessorViewController.swift */; };
+		A7B526DF1D05BD34000476B0 /* DetalheAlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B526DE1D05BD34000476B0 /* DetalheAlunoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A7B526C11D05B611000476B0 /* AulaCloudKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AulaCloudKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B526C41D05B611000476B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7B526CB1D05B611000476B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7B526CD1D05B611000476B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7B526D01D05B611000476B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7B526D21D05B611000476B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B526D81D05B757000476B0 /* ProfessorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessorViewController.swift; sourceTree = "<group>"; };
+		A7B526DA1D05B765000476B0 /* AlunoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoViewController.swift; sourceTree = "<group>"; };
+		A7B526DC1D05BCF2000476B0 /* DetalheProfessorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheProfessorViewController.swift; sourceTree = "<group>"; };
+		A7B526DE1D05BD34000476B0 /* DetalheAlunoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheAlunoViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7B526BE1D05B611000476B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7B526B81D05B611000476B0 = {
+			isa = PBXGroup;
+			children = (
+				A7B526C31D05B611000476B0 /* AulaCloudKit */,
+				A7B526C21D05B611000476B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7B526C21D05B611000476B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7B526C11D05B611000476B0 /* AulaCloudKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7B526C31D05B611000476B0 /* AulaCloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				A7B526C41D05B611000476B0 /* AppDelegate.swift */,
+				A7B526CA1D05B611000476B0 /* Main.storyboard */,
+				A7B526CD1D05B611000476B0 /* Assets.xcassets */,
+				A7B526CF1D05B611000476B0 /* LaunchScreen.storyboard */,
+				A7B526D21D05B611000476B0 /* Info.plist */,
+				A7B526D81D05B757000476B0 /* ProfessorViewController.swift */,
+				A7B526DA1D05B765000476B0 /* AlunoViewController.swift */,
+				A7B526DC1D05BCF2000476B0 /* DetalheProfessorViewController.swift */,
+				A7B526DE1D05BD34000476B0 /* DetalheAlunoViewController.swift */,
+			);
+			path = AulaCloudKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7B526C01D05B611000476B0 /* AulaCloudKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7B526D51D05B611000476B0 /* Build configuration list for PBXNativeTarget "AulaCloudKit" */;
+			buildPhases = (
+				A7B526BD1D05B611000476B0 /* Sources */,
+				A7B526BE1D05B611000476B0 /* Frameworks */,
+				A7B526BF1D05B611000476B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AulaCloudKit;
+			productName = AulaCloudKit;
+			productReference = A7B526C11D05B611000476B0 /* AulaCloudKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7B526B91D05B611000476B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "leonardo fernandes farias";
+				TargetAttributes = {
+					A7B526C01D05B611000476B0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A7B526BC1D05B611000476B0 /* Build configuration list for PBXProject "AulaCloudKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7B526B81D05B611000476B0;
+			productRefGroup = A7B526C21D05B611000476B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7B526C01D05B611000476B0 /* AulaCloudKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7B526BF1D05B611000476B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B526D11D05B611000476B0 /* LaunchScreen.storyboard in Resources */,
+				A7B526CE1D05B611000476B0 /* Assets.xcassets in Resources */,
+				A7B526CC1D05B611000476B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7B526BD1D05B611000476B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B526DD1D05BCF2000476B0 /* DetalheProfessorViewController.swift in Sources */,
+				A7B526D91D05B757000476B0 /* ProfessorViewController.swift in Sources */,
+				A7B526DF1D05BD34000476B0 /* DetalheAlunoViewController.swift in Sources */,
+				A7B526DB1D05B765000476B0 /* AlunoViewController.swift in Sources */,
+				A7B526C51D05B611000476B0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7B526CA1D05B611000476B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7B526CB1D05B611000476B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7B526CF1D05B611000476B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7B526D01D05B611000476B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7B526D31D05B611000476B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7B526D41D05B611000476B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7B526D61D05B611000476B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AulaCloudKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.AulaCloudKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7B526D71D05B611000476B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AulaCloudKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.AulaCloudKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7B526BC1D05B611000476B0 /* Build configuration list for PBXProject "AulaCloudKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B526D31D05B611000476B0 /* Debug */,
+				A7B526D41D05B611000476B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7B526D51D05B611000476B0 /* Build configuration list for PBXNativeTarget "AulaCloudKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B526D61D05B611000476B0 /* Debug */,
+				A7B526D71D05B611000476B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7B526B91D05B611000476B0 /* Project object */;
+}
