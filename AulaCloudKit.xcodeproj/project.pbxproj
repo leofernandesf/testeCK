@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7620B701D09B18700BE08F9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7620B6F1D09B18700BE08F9 /* CloudKit.framework */; };
 		A7B526C51D05B611000476B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B526C41D05B611000476B0 /* AppDelegate.swift */; };
 		A7B526CC1D05B611000476B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B526CA1D05B611000476B0 /* Main.storyboard */; };
 		A7B526CE1D05B611000476B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B526CD1D05B611000476B0 /* Assets.xcassets */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7620B6E1D09B15E00BE08F9 /* AulaCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AulaCloudKit.entitlements; sourceTree = "<group>"; };
+		A7620B6F1D09B18700BE08F9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		A7B526C11D05B611000476B0 /* AulaCloudKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AulaCloudKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B526C41D05B611000476B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7B526CB1D05B611000476B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7620B701D09B18700BE08F9 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,7 @@
 		A7B526B81D05B611000476B0 = {
 			isa = PBXGroup;
 			children = (
+				A7620B6F1D09B18700BE08F9 /* CloudKit.framework */,
 				A7B526C31D05B611000476B0 /* AulaCloudKit */,
 				A7B526C21D05B611000476B0 /* Products */,
 			);
@@ -60,6 +65,7 @@
 		A7B526C31D05B611000476B0 /* AulaCloudKit */ = {
 			isa = PBXGroup;
 			children = (
+				A7620B6E1D09B15E00BE08F9 /* AulaCloudKit.entitlements */,
 				A7B526C41D05B611000476B0 /* AppDelegate.swift */,
 				A7B526CA1D05B611000476B0 /* Main.storyboard */,
 				A7B526CD1D05B611000476B0 /* Assets.xcassets */,
@@ -105,6 +111,12 @@
 				TargetAttributes = {
 					A7B526C01D05B611000476B0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 34PHTXR9K4;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -261,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AulaCloudKit/AulaCloudKit.entitlements;
 				INFOPLIST_FILE = AulaCloudKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.AulaCloudKit;
@@ -272,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AulaCloudKit/AulaCloudKit.entitlements;
 				INFOPLIST_FILE = AulaCloudKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.AulaCloudKit;
@@ -298,6 +312,7 @@
 				A7B526D71D05B611000476B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
