@@ -314,7 +314,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wWL-15-PeG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-profile" translatesAutoresizingMaskIntoConstraints="NO" id="wWL-15-PeG">
                                 <rect key="frame" x="113" y="72" width="150" height="150"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSN-bz-5UZ">
@@ -381,7 +381,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="ca3-LB-tPW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Peb-dX-15F"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Peb-dX-15F">
+                            <connections>
+                                <action selector="acao:" destination="7H4-Br-oDW" id="yHH-sZ-FD4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="ivImagem" destination="wWL-15-PeG" id="bhF-gC-0Mr"/>

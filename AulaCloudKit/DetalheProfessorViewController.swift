@@ -18,8 +18,8 @@ class DetalheProfessorViewController: UIViewController {
     @IBOutlet weak var myTable: UITableView!
     var record:CKRecord?
     var nome = ""
-    var verificador:Bool!
     let recognizer = UITapGestureRecognizer()
+    var records = [CKRecord]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,8 @@ class DetalheProfessorViewController: UIViewController {
                 let image = UIImage(data: imagemData)
                 ivImagem.image = image
             }
+            fetch()
+
             
         }
         ivImagem.userInteractionEnabled = true
@@ -48,6 +50,40 @@ class DetalheProfessorViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func fetch() {
+        var referencias = [CKReference]()
+        referencias = record!["alunos"] as! [CKReference]
+        
+        var idsArray = Array<CKRecordID>()
+        for ids in referencias {
+            idsArray.append(ids.recordID)
+        }
+        print(idsArray)
+        
+        let fetchRecordsOperation = CKFetchRecordsOperation(recordIDs: idsArray)
+        fetchRecordsOperation.perRecordProgressBlock = {
+            print($1)
+            
+        }
+        fetchRecordsOperation.perRecordCompletionBlock = {record, recordID, error in
+            if(error != nil){
+                print(error!.description)
+            } else{
+                print("voltou: ",record!["nome"])
+                self.records.append(record!)
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.myTable.reloadData()
+                })
+                
+            }
+        }
+        
+        fetchRecordsOperation.database = CKContainer.defaultContainer().publicCloudDatabase
+        fetchRecordsOperation.start()
+        
+    
     }
     
     @IBAction func acao(sender: AnyObject) {
@@ -152,22 +188,25 @@ extension DetalheProfessorViewController : UIImagePickerControllerDelegate, UINa
 }
 
 
+
+
 extension DetalheProfessorViewController : UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return records.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell3")
-        cell?.textLabel?.text = "Antonio"
+        cell?.textLabel?.text = records[indexPath.row]["nome"] as? String
         return cell!
         
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Alunos"
+        
     }
 
 }
